@@ -21,10 +21,6 @@ This file contains starter code for practicing with GitHub Copilot
 
 # Task 4: Sorting Algorithms
 # TODO: Implement bubble sort, quick sort, and merge sort algorithms in a class
-
-
-# Task 4: Sorting Algorithms
-# TODO: Implement bubble sort, quick sort, and merge sort algorithms in a class
 class SortingAlgorithms:
     pass
 

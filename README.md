@@ -1,106 +1,97 @@
-# Setup Lab
+# AI-Assisted Programming - Labs Template (Legacy)
 
-Welcome to the Setup Lab! This guide will help you set up your environment, understand the lab structure, and complete your tasks using GitHub Codespaces and Copilot.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/danielcregg/aiap-labs-template_old?style=flat-square)
+
+A starter template for an AI-Assisted Programming lab course. Students use **GitHub Codespaces** and **GitHub Copilot** to complete a series of Python programming tasks covering functions, classes, sorting and search algorithms, data structures, and benchmarking.
+
+> **Note:** This is the legacy version of the labs template. Consider checking for an updated version of this repository.
 
 ---
 
-## 🚀 Quick Start
-1. **Open in Codespace**: Click the "Code" button and select "Create codespace on main".
-2. **Wait for Setup**: Codespace will install all dependencies automatically.
-3. **Start Learning**: Open the `setup_lab.py` file and begin your work.
+## Prerequisites
+
+- A [GitHub](https://github.com) account with access to **GitHub Codespaces**
+- **GitHub Copilot** enabled on your account
+- Basic familiarity with Python
 
 ---
 
-## 🛠️ Environment Setup
+## Getting Started
 
-- **GitHub Copilot**: AI-powered code completion and suggestions.
-- **Python**: Latest stable Python version.
-- **VS Code Extensions**: Python, Copilot and more.
+1. **Open in Codespace** -- Click the **Code** button on the repository page and select **Create codespace on main**.
+2. **Wait for Setup** -- The dev container will automatically install Python and all required dependencies.
+3. **Start Working** -- Open `setup_lab.py` and follow the TODO comments for each task.
 
-### Verify Your Setup
+### Verify Your Environment
 
-```mermaid
-graph LR
-    A[Check Copilot Status] --> B[Test Python: python --version]
-    B --> C[Test Jupyter: jupyter --version]
+After the Codespace finishes building, confirm everything is working:
+
+```bash
+python --version
+pip list
 ```
 
-1. Ensure Copilot is active (check status bar at bottom to the right).
-2. Test Python installation: `python --version`.
+Ensure GitHub Copilot is active by checking the status bar in VS Code.
 
 ---
 
-## 📚 Lab Structure
+## Lab Structure
 
-```mermaid
-graph TD
-    A[setup_lab.py] --> B[Task 1: Greeting Function]
-    A --> C[Task 2: Statistics Function]
-    A --> D[Task 3: Calculator Class]
-    A --> E[Task 4: Sorting Algorithms]
-    A --> F[Task 5: Search Algorithms]
-    A --> G[Task 6: Data Structure]
-    A --> H[Task 7: Benchmarking]
+All tasks are contained in a single file, `setup_lab.py`:
+
+| Task | Description |
+|------|-------------|
+| 1 | Create a greeting function |
+| 2 | Build a statistics function (mean, median, mode) |
+| 3 | Implement a Calculator class with basic operations |
+| 4 | Implement bubble sort, quick sort, and merge sort |
+| 5 | Implement linear search and binary search |
+| 6 | Create a custom data structure with insert, search, and delete |
+| 7 | Write a benchmarking function for algorithm performance |
+
+---
+
+## Usage
+
+Complete each TODO in `setup_lab.py`, then test your implementations:
+
+```bash
+python setup_lab.py
 ```
 
-- All code for this lab is in `setup_lab.py`.
-- Each task is clearly marked with comments and TODOs.
-- Use Copilot and VS Code to help you complete each section.
+### Dependencies
+
+Install manually if needed:
+
+```bash
+pip install -r requirements.txt
+```
+
+The `requirements.txt` includes `numpy` and `pandas`.
 
 ---
 
-## 💡 How to Complete the Lab
+## Submission Checklist
 
-1. **Read the comments and TODOs in `setup_lab.py`.**
-2. **Complete each function or class as described.**
-3. **Test your code using the `if __name__ == "__main__":` block at the end of the file.**
-4. **Commit your changes with clear messages.**
-5. **Push your work to GitHub.**
-
----
-
-## 📝 Submission Checklist
-
-- [ ] All tasks in `setup_lab.py` are completed.
-- [ ] Code is tested and runs without errors.
-- [ ] Clear and descriptive commit messages.
-- [ ] Pushed to your GitHub repository.
+- [ ] All tasks in `setup_lab.py` are completed
+- [ ] Code is tested and runs without errors
+- [ ] Changes are committed with clear, descriptive messages
+- [ ] Work is pushed to GitHub
 
 ---
 
-## 🔧 Troubleshooting & Help
+## Troubleshooting
 
-- **Copilot not working?** Make sure you are signed in to GitHub and have access.
-- **Import errors?** Run `pip install -r requirements.txt` in the terminal.
-- **Kernel issues?** Restart the Jupyter kernel or codespace.
-- **Extension problems?** Reload the VS Code window.
-
-If you need help:
-- Use the GitHub Issues tab for technical problems.
-- Ask questions during office hours.
-- Collaborate with classmates (follow academic integrity guidelines).
+| Issue | Solution |
+|-------|----------|
+| Copilot not responding | Verify you are signed in to GitHub and have Copilot access |
+| Import errors | Run `pip install -r requirements.txt` |
+| Extension issues | Reload the VS Code window (`Ctrl+Shift+P` > *Reload Window*) |
 
 ---
 
-## 🤖 AI Programming Best Practices
+## License
 
-- Write clear, descriptive comments.
-- Use meaningful variable and function names.
-- Provide context through docstrings.
-- Break complex problems into smaller parts.
-- Review and test AI-generated code before committing.
-- Use type hints for better AI suggestions.
-- Document your decision-making process.
-
----
-
-## 🎓 Academic Integrity
-
-- AI tools are learning aids, not replacements for understanding.
-- Always review and understand AI-generated code.
-- Follow your institution's academic integrity policies.
-- Give appropriate attribution when required.
-
----
-
-**Happy Coding with AI! 🤖✨**
+This project is licensed under the [MIT License](LICENSE).
